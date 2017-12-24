@@ -12,14 +12,14 @@ EOF
     IRAM    (rwx) : ORIGIN = 0x20000000, LENGTH = ${ram}k
 }
 
-include $1-ccm.ld;
+INCLUDE $1-ccm.ld
 EOF
     else
         cat << EOF >> $name.ld
     IRAM    (rwx) : ORIGIN = 0x20000000, LENGTH = ${ram}k
 }
 
-include $1.ld;
+INCLUDE $1.ld
 EOF
     fi
 done
