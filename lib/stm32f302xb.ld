@@ -4,4 +4,4 @@ MEMORY
     IRAM    (rwx) : ORIGIN = 0x20000000, LENGTH = 32k
 }
 
-include cortex-m4.ld
+include cortex-m4.ld;

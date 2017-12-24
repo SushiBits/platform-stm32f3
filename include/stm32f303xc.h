@@ -7,7 +7,7 @@
   *          This file contains:
   *           - Data structures and the address mapping for all peripherals
   *           - Peripheral's registers declarations and bits definition
-  *           - Macros to access peripheral’s registers hardware
+  *           - Macros to access peripheralï¿½s registers hardware
   *
   ******************************************************************************
   * @attention
@@ -13326,58 +13326,6 @@ typedef struct
 /**
   * @}
   */
-
-
-/******************************************************************************/
-/*  For a painless codes migration between the STM32F3xx device product       */
-/*  lines, the aliases defined below are put in place to overcome the         */
-/*  differences in the interrupt handlers and IRQn definitions.               */
-/*  No need to update developed interrupt code when moving across             */ 
-/*  product lines within the same STM32F3 Family                              */
-/******************************************************************************/
-
-/* Aliases for __IRQn */
-#define ADC1_IRQn       ADC1_2_IRQn
-#define SDADC1_IRQn     ADC4_IRQn
-#define COMP1_2_IRQn    COMP1_2_3_IRQn
-#define COMP2_IRQn      COMP1_2_3_IRQn
-#define COMP_IRQn       COMP1_2_3_IRQn
-#define COMP4_6_IRQn    COMP4_5_6_IRQn
-#define TIM15_IRQn      TIM1_BRK_TIM15_IRQn
-#define TIM18_DAC2_IRQn TIM1_CC_IRQn
-#define TIM17_IRQn      TIM1_TRG_COM_TIM17_IRQn
-#define TIM16_IRQn      TIM1_UP_TIM16_IRQn
-#define TIM6_DAC1_IRQn  TIM6_DAC_IRQn
-#define TIM7_DAC2_IRQn  TIM7_IRQn
-#define TIM12_IRQn      TIM8_BRK_IRQn
-#define TIM14_IRQn      TIM8_TRG_COM_IRQn
-#define TIM13_IRQn      TIM8_UP_IRQn
-#define CEC_IRQn        USBWakeUp_IRQn
-#define USBWakeUp_IRQn  USBWakeUp_RMP_IRQn
-#define CAN_TX_IRQn     USB_HP_CAN_TX_IRQn
-#define CAN_RX0_IRQn    USB_LP_CAN_RX0_IRQn
-
-
-/* Aliases for __IRQHandler */
-#define ADC1_IRQHandler       ADC1_2_IRQHandler
-#define SDADC1_IRQHandler     ADC4_IRQHandler
-#define COMP1_2_IRQHandler    COMP1_2_3_IRQHandler
-#define COMP2_IRQHandler      COMP1_2_3_IRQHandler
-#define COMP_IRQHandler       COMP1_2_3_IRQHandler
-#define COMP4_6_IRQHandler    COMP4_5_6_IRQHandler
-#define TIM15_IRQHandler      TIM1_BRK_TIM15_IRQHandler
-#define TIM18_DAC2_IRQHandler TIM1_CC_IRQHandler
-#define TIM17_IRQHandler      TIM1_TRG_COM_TIM17_IRQHandler
-#define TIM16_IRQHandler      TIM1_UP_TIM16_IRQHandler
-#define TIM6_DAC1_IRQHandler  TIM6_DAC_IRQHandler
-#define TIM7_DAC2_IRQHandler  TIM7_IRQHandler
-#define TIM12_IRQHandler      TIM8_BRK_IRQHandler
-#define TIM14_IRQHandler      TIM8_TRG_COM_IRQHandler
-#define TIM13_IRQHandler      TIM8_UP_IRQHandler
-#define CEC_IRQHandler        USBWakeUp_IRQHandler
-#define USBWakeUp_IRQHandler  USBWakeUp_RMP_IRQHandler
-#define CAN_TX_IRQHandler     USB_HP_CAN_TX_IRQHandler
-#define CAN_RX0_IRQHandler    USB_LP_CAN_RX0_IRQHandler
 
 
 #ifdef __cplusplus

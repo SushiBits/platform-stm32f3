@@ -7,7 +7,7 @@
   *          This file contains:
   *           - Data structures and the address mapping for all peripherals
   *           - Peripheral's registers declarations and bits definition
-  *           - Macros to access peripheral’s registers hardware
+  *           - Macros to access peripheralï¿½s registers hardware
   *
   ******************************************************************************
   * @attention
@@ -12099,46 +12099,6 @@ typedef struct
 /**
   * @}
   */
-
-
-/******************************************************************************/
-/*  For a painless codes migration between the STM32F3xx device product       */
-/*  lines, the aliases defined below are put in place to overcome the         */
-/*  differences in the interrupt handlers and IRQn definitions.               */
-/*  No need to update developed interrupt code when moving across             */ 
-/*  product lines within the same STM32F3 Family                              */
-/******************************************************************************/
-
-/* Aliases for __IRQn */
-#define ADC1_IRQn           ADC1_2_IRQn
-#define USB_LP_CAN_RX0_IRQn CAN_RX0_IRQn
-#define USB_HP_CAN_TX_IRQn  CAN_TX_IRQn
-#define COMP1_2_IRQn        COMP2_IRQn
-#define COMP1_2_3_IRQn      COMP2_IRQn
-#define COMP_IRQn           COMP2_IRQn
-#define COMP4_5_6_IRQn      COMP4_6_IRQn
-#define TIM15_IRQn          TIM1_BRK_TIM15_IRQn
-#define TIM18_DAC2_IRQn     TIM1_CC_IRQn
-#define TIM17_IRQn          TIM1_TRG_COM_TIM17_IRQn
-#define TIM16_IRQn          TIM1_UP_TIM16_IRQn
-#define TIM6_DAC_IRQn       TIM6_DAC1_IRQn
-#define TIM7_IRQn           TIM7_DAC2_IRQn
-
-
-/* Aliases for __IRQHandler */
-#define ADC1_IRQHandler           ADC1_2_IRQHandler
-#define USB_LP_CAN_RX0_IRQHandler CAN_RX0_IRQHandler
-#define USB_HP_CAN_TX_IRQHandler  CAN_TX_IRQHandler
-#define COMP1_2_IRQHandler        COMP2_IRQHandler
-#define COMP1_2_3_IRQHandler      COMP2_IRQHandler
-#define COMP_IRQHandler           COMP2_IRQHandler
-#define COMP4_5_6_IRQHandler      COMP4_6_IRQHandler
-#define TIM15_IRQHandler          TIM1_BRK_TIM15_IRQHandler
-#define TIM18_DAC2_IRQHandler     TIM1_CC_IRQHandler
-#define TIM17_IRQHandler          TIM1_TRG_COM_TIM17_IRQHandler
-#define TIM16_IRQHandler          TIM1_UP_TIM16_IRQHandler
-#define TIM6_DAC_IRQHandler       TIM6_DAC1_IRQHandler
-#define TIM7_IRQHandler           TIM7_DAC2_IRQHandler
 
 
 #ifdef __cplusplus
