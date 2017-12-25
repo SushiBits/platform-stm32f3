@@ -13,7 +13,7 @@ extern int errno;
 #include <unistd.h>
 
 static void *mem_end = NULL;
-extern uint8_t __bss_end__, __heap_end__;
+extern uint8_t __bss_end__, __heap_end;
 
 static inline void *getsp(void)
 {
@@ -30,7 +30,7 @@ void *_sbrk(ptrdiff_t incr)
 	void *oldbrk = mem_end;
 	void *newbrk = oldbrk + incr;
 
-	if ((void *)newbrk >= (void *)(&__heap_end__ ?: getsp()))
+	if ((void *)newbrk >= (void *)(&__heap_end ?: getsp()))
 	{
 		errno = ENOMEM;
 		return NULL;
